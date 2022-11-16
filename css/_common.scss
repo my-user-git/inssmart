@@ -1,0 +1,306 @@
+@import '_variable.scss';
+@import '_fonts.scss';
+// @import '_mixin.scss';
+// @import '_ui-kit.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+}
+
+body {
+  padding-top: 81px;
+  background-color: $greyF4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+picture {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+picture:focus,
+img:focus,
+div:focus,
+svg:focus {
+  outline: none;
+}
+
+
+button,
+input {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* section-products */
+
+.section-products {
+  font-size: 0;
+
+  &__product {
+
+    &-item {
+      display: none;
+      padding: 40px 0;
+      background-color: $white;
+      border-radius: 0px 20px 20px 20px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    font-family: $MontserratBold, $fontStandart;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 150%;
+    color: $black0C;
+
+    &-h2 {
+      display: inline-block;
+    }
+
+    &-h3 {
+      margin-bottom: 20px;
+      font-family: $MontserratMedium, $fontStandart;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      color: $black0C;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    transform-origin: center center;
+    transition: transform ease-in-out .5s;
+  }
+
+  &__tab {
+    display: block;
+    padding: 20px 24px;
+    font-family: $MontserratMedium, $fontStandart;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    color: $black0C;
+    background-color: $greyD9;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  &__wrap {
+    padding-left: 11px;
+  }
+
+  &__picture {
+    max-width: 290px;
+  }
+
+  &__img {
+    height: auto;
+  }
+
+  &__description {
+    font-family: $MontserratRegular, $fontStandart;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $black49;
+
+    & span {
+      display: block;
+
+      &:nth-child(1) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__options {
+    position: relative;
+    margin-bottom: 25px;
+    padding: 81px 0 0 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 40px;
+      right: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+      border-bottom: solid 1px $greyD9;
+    }
+
+    &-woman {
+      padding-top: 71px;
+
+      & .section-products__options-item {
+        display: flex;
+        align-items: center;
+      }
+
+      & .section-products__options-list {
+        width: 101%;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 96%;
+      max-height: 119px;
+      list-style-position: inside;
+    }
+
+    &-item {
+      margin-bottom: 16px;
+      font-family: $MontserratRegular, $fontStandart;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    &-icon {
+      margin-right: 16px;
+    }
+  }
+
+  &__form {
+
+    &-input {
+      width: 351px;
+      margin-right: 24px;
+      padding: 14px 16px 11px 16px;
+      font-family: $MontserratRegular, $fontStandart;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $black0C;
+      border: 1px solid $greyD9;
+      border-radius: 16px;
+      transition: border-color ease-in-out .3s;
+
+      &::placeholder {
+        font-family: $MontserratRegular, $fontStandart;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $greyD9;
+      }
+    }
+
+    &-submit {
+      padding: 14px 24px;
+      font-family: $MontserratRegular, $fontStandart;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $white;
+      border-radius: 16px;
+      background-color: $blueC5;
+      transition: background-color ease-in-out .3s;
+
+      &:disabled {
+        opacity: .6;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 40px;
+      padding: 30px 36px;
+      background: $white;
+      box-shadow: 0px 10px 40px rgba(12, 12, 12, 0.1);
+      border-radius: 20px;
+    }
+
+    &-ok {
+      margin-right: 10px;
+      padding: 14px 24px;
+      font-family: $MontserratRegular, $fontStandart;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $white;
+      border-radius: 16px;
+      background-color: $blueC5;
+      transition: background-color ease-in-out .3s;
+    }
+
+    &-cancel {
+      padding: 14px 24px;
+      font-family: $MontserratRegular, $fontStandart;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $black0C;
+      border-radius: 16px;
+      transition: color ease-in-out .3s;
+    }
+  }
+}
+
+.active {
+  display: grid;
+}
+
+/* tab */
+
+.tab {
+  &-active {
+    color: $blueC5;
+    background-color: $white;
+
+    & .section-products__arrow {
+      transform: rotate(180deg);
+    }
+  }
+}

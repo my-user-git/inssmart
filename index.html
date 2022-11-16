@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inssmart: тестовое задание Морозов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header></header>
+  <main class="main">
+    <section class="section-products container">
+      <h2 class="section-products__heading-h2" id="man">
+        <button class="section-products__tab tab-active" data-path="product-STELS_Navigator_510_ HD_26_2022">
+          Горный велосипед
+          <svg class="section-products__arrow" width="14" height="9" viewbox="0 0 14 9" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </h2>
+      <h2 class="section-products__heading-h2" id="woman">
+        <button class="section-products__tab" data-path="product-SCHWINN_Traveler_women_2022">
+          Женский велосипед
+          <svg class="section-products__arrow" width="14" height="9" viewbox="0 0 14 9" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </h2>
+      <ul class="section-products__product">
+        <li class="section-products__product-item active" data-target="product-STELS_Navigator_510_ HD_26_2022">
+          <picture class="section-products__picture" tabindex="0">
+            <source srcset="img/STELS_Navigator_510_HD_26_2022_mobile.png" media="(max-width:700px)">
+            <img class="section-products__img" src="img/STELS_Navigator_510_HD_26_2022.png"
+              alt="Велосипед STELS_Navigator_510_ HD_26_2022" title="Велосипед STELS Navigator 510 HD 26 2022">
+          </picture>
+
+          <div class="section-products__wrap">
+            <h1 class="section-products__heading">
+              Велосипед STELS Navigator 510 HD 26 2022
+            </h1>
+            <p class="section-products__description">
+              <span>Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой
+                размер
+                рамы
+                расчитан на рост от 135 до 165 см.
+              </span>
+              <span>
+                Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была изготовлена с учетом использования
+                велосипеда подростками.
+              </span>
+            </p>
+          </div>
+
+          <div class="section-products__options">
+            <h3 class="section-products__heading-h3">
+              Характеристики
+            </h3>
+            <ol class="section-products__options-list">
+              <li class="section-products__options-item">
+                Двойной обод
+              </li>
+              <li class="section-products__options-item">
+                Алюминиевый сплав
+              </li>
+              <li class="section-products__options-item">
+                Колеса диаметром 26 дюймов
+              </li>
+              <li class="section-products__options-item">
+                Покрышки 26х1,95"
+              </li>
+            </ol>
+          </div>
+          <form class="section-products__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <h3 class="section-products__heading-h3">
+              Добавить характеристику
+            </h3>
+            <input class="section-products__form-input" type="text" name="" id="" placeholder="Алюминиевый сплав">
+            <button class="section-products__form-submit" type="submit">Добавить</button>
+            <div class="section-products__form-buttons">
+              <button class="section-products__form-ok" type="submit">Окей</button>
+              <button class="section-products__form-cancel" type="submit">Отмена</button>
+            </div>
+          </form>
+        </li>
+        <li class="section-products__product-item" data-target="product-SCHWINN_Traveler_women_2022">
+          <picture class="section-products__picture" tabindex="0">
+            <source srcset="img/SCHWINN_Traveler_women_2022_mobile.png" media="(max-width:700px)">
+            <img class="section-products__img" src="img/SCHWINN_Traveler_women_2022.png"
+              alt="Велосипед SCHWINN_Traveler_women_2022" title="Велосипед SCHWINN Traveler women 2022">
+          </picture>
+          <div class="section-products__wrap">
+            <h1 class="section-products__heading">
+              Велосипед SCHWINN Traveler women 2022
+            </h1>
+            <p class="section-products__description">
+              <span>Женский велосипед со стальной рамой Classic step-true lightweight позволяет девушкам без проблем его перемещать.
+              </span>
+              <span>
+                На данном велосипеде имеется 7 скоростей с переключателями от Shimano, а жесткая вилка обеспечивает отличную управляемость. Подходит для катания по асфальтированным поверхностям.
+              </span>
+            </p>
+          </div>
+          <div class="section-products__options section-products__options-woman">
+            <h3 class="section-products__heading-h3">
+              Характеристики
+            </h3>
+            <ul class="section-products__options-list">
+              <li class="section-products__options-item">
+                <svg class="section-products__options-icon" width="20" height="18" viewbox="0 0 20 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#woman-icon"></use>
+                </svg>
+                Стальная рама
+              </li>
+              <li class="section-products__options-item">
+                <svg class="section-products__options-icon" width="20" height="18" viewbox="0 0 20 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#woman-icon"></use>
+                </svg>
+                Жесткая вилка
+              </li>
+              <li class="section-products__options-item">
+                <svg class="section-products__options-icon" width="20" height="18" viewbox="0 0 20 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#woman-icon"></use>
+                </svg>
+                Колеса диаметром 24 дюймов
+              </li>
+              <li class="section-products__options-item">
+                <svg class="section-products__options-icon" width="20" height="18" viewbox="0 0 20 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#woman-icon"></use>
+                </svg>
+                7 скоростей
+              </li>
+            </ul>
+          </div>
+          <form class="section-products__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <h3 class="section-products__heading-h3">
+              Добавить характеристику
+            </h3>
+            <input class="section-products__form-input" type="text" name="" id="" placeholder="Алюминиевый сплав">
+            <button class="section-products__form-submit" type="submit">Добавить</button>
+            <div class="section-products__form-buttons">
+              <button class="section-products__form-ok" type="submit">Окей</button>
+              <button class="section-products__form-cancel" type="submit">Отмена</button>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="js/tabs.js"></script>
+  <script src="js/add-option.js"></script>
+</body>
+
+</html>

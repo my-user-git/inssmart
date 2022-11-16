@@ -1,0 +1,35 @@
+.section-products {
+  &__form {
+    &-input:hover {
+      border-color: $blueC5;
+    }
+
+    &-input:focus {
+      border-color: $blueC5;
+    }
+
+    &-submit:hover {
+      background-color: $blue9A;
+    }
+
+    &-submit:active {
+      background-color: $blue68;
+    }
+
+    &-ok:hover {
+      background-color: $blue9A;
+    }
+
+    &-ok:active {
+      background-color: $blue68;
+    }
+
+    &-cancel:hover {
+      color: $blue9A;
+    }
+
+    &-cancel:active {
+      color: $blue68;
+    }
+  }
+}
